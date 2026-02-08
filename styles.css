@@ -90,7 +90,11 @@ body {
 /* Hero Section */
 .hero {
     min-height: 100vh;
-    background: linear-gradient(135deg, var(--sea-blue) 0%, #1a5490 100%);
+    background: linear-gradient(135deg, rgba(13, 59, 102, 0.7) 0%, rgba(26, 84, 144, 0.7) 100%),
+                url('assets/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -100,7 +104,11 @@ body {
 }
 
 [data-theme="dark"] .hero {
-    background: linear-gradient(135deg, #0a2640 0%, #0d3355 100%);
+    background: linear-gradient(135deg, rgba(10, 38, 64, 0.7) 0%, rgba(13, 51, 85, 0.7) 100%),
+                url('assets/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero::before {
